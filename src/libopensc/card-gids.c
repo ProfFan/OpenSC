@@ -647,6 +647,7 @@ static int gids_init(sc_card_t * card)
 	/* fix me: add other algorithms when the gids specification will tell how to extract the algo id from the FCP */
 	_sc_card_add_rsa_alg(card, 1024, flags, 0);
 	_sc_card_add_rsa_alg(card, 2048, flags, 0);
+  _sc_card_add_rsa_alg(card, 4096, flags, 0);
 	return SC_SUCCESS;
 }
 
